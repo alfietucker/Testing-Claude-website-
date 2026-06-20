@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+
+  --color-brand-red: #C8102E;
+  --color-brand-dark: #111111;
+  --color-brand-muted: #F7F7F7;
+  --color-brand-gold: #D4A017;
+}
+
+@utility text-stroke {
+  -webkit-text-stroke: 2px #111111;
+  color: transparent;
+}
+
+@utility text-stroke-white {
+  -webkit-text-stroke: 2px #ffffff;
+  color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-brand-dark);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Focus ring that matches brand */
+:focus-visible {
+  outline: 2px solid #C8102E;
+  outline-offset: 2px;
+}
